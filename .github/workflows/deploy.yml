@@ -34,6 +34,15 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: dist # The folder the action should deploy.
 
+      - name: Deploy to prod url
+        # main is the branch name where new code is pushed
+        if: github.ref == 'refs/heads/devlopment'
+
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-devlopment # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.     
+
 # it might through permission error during deployment,
 # Editor mode
 # go the repo settings, Action > General > Workflow permissions
