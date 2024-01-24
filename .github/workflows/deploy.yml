@@ -34,7 +34,7 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: dist # The folder the action should deploy.
 
-      - name: Deploy to prod url
+      - name: Deploy to dev
         # main is the branch name where new code is pushed
         if: github.ref == 'refs/heads/devlopment'
 
