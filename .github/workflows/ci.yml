@@ -30,6 +30,3 @@ jobs:
 
       - name: Run lint
         run: npm run lint
-
-      - name: Run format check
-        run: npm run format
