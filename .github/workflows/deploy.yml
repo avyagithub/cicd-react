@@ -35,6 +35,7 @@ jobs:
           folder: dist # The folder the action should deploy.
 
 # it might through permission error during deployment,
+# Editor mode
 # go the repo settings, Action > General > Workflow permissions
 # and select Read and Write permissions
 # click save,
