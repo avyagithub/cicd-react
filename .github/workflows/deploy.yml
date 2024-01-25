@@ -34,14 +34,13 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: dist # The folder the action should deploy.
 
-      - name: Deploy to dev
-        # main is the branch name where new code is pushed
+      - name: Deploy to dev url
         if: github.ref == 'refs/heads/devlopment'
-
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-devlopment # The branch the action should deploy to.
-          folder: dist # The folder the action should deploy.     
+           branch: gh-dev # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
+   
 
 # it might through permission error during deployment,
 # Editor mode
