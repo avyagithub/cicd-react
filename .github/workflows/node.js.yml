@@ -37,4 +37,4 @@ jobs:
 
       - name: Deploy to EC2 Instance
         run: |
-          ssh -o StrictHostKeyChecking=no -p ${{ secrets.DEPLOY_PORT }} ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }} 'cd /path/to/your/react/app && git pull origin master && npm install && npm run build'
+          ssh -o StrictHostKeyChecking=no -p ${{ secrets.DEPLOY_PORT }} ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }} 'cd /path/to/your/react/app && git pull origin main && npm install && npm run build'
