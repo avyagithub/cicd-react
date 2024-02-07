@@ -31,4 +31,11 @@ jobs:
              name: production-files
              path: ./dist
 
+      - name: Deploy to Githib pages
+        uses: peaceiris/actions-gh-pages@v3
+
+        with:
+               github_token: ${{ secrets.CICD_TEST }}
+               publish_dir: ./dist
+
  
